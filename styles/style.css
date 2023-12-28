@@ -1,0 +1,405 @@
+* {
+    font-family: 'Inter', serif;
+    font-weight: 400;
+}
+
+body {
+    margin: auto;
+    font-family: 'Inter';
+    font-weight: 400;
+    background-color: #1e1e1e;
+    width: 360px;
+    height: 4160px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: auto;
+}
+
+article {
+    width: 320px;
+}
+
+.section-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 360px;
+    min-height: 100px;
+}
+
+.content-section_theme_dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.content-section_theme_bright {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+:root {
+    --yellow: #FEE42A;
+    --black: #131313;
+    --white: #F5F5F5;
+    --grey: #CCC;
+}
+
+/* HEADER SECTION */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+}
+
+.header__logo {
+    display: block;
+    width: 78.453px
+}
+
+
+.header__menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header__menu-item {
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.header__menu-link {
+    color: var(--white);
+}
+
+.header__menu-item_active {
+    text-decoration: none;
+}
+
+
+/* COVER SECTION */
+/* .cover-section {
+    padding-left: 21px;
+    
+}
+
+.cover {
+    background-image: url(../images/cover.svg);
+    background-size: 97% auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    width: 339px;
+    min-height: 198px;
+    position: absolute;
+    margin-top: 16px;
+}
+
+.cover-title-container {
+    width: 310px;
+    padding-right: 21px;
+    position: relative;
+    margin-top: 0;
+}
+
+.cover__title span {
+    display: block;
+    font-family: 'EB Garamond';
+    font-weight: 400;
+    font-size: 72px;
+    font-style: normal;
+    line-height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+} */
+
+
+.cover{
+    padding: 7px 24px 32px 20px;
+    background-image: url(../images/cover.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 95% auto; 
+    min-height: 258px;
+}
+
+
+.cover__title span {
+    display: block;
+    font-family: 'EB Garamond';
+    font-weight: 400;
+    font-size: 72px;
+    font-style: normal;
+    line-height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* SECOND SECTION */
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 320px;
+    gap: 24px;
+    margin-top: 30px;
+    height: 453px;
+    margin-bottom: 30px;
+}
+
+.second-section p {
+    color: var(--white);
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+
+}
+
+.second-section-title {
+    display: flex;
+    flex-direction: row;
+    color: var(--grey);
+    
+}
+
+.second-section-title h2 {
+    font-size: 16px;
+
+}
+
+.second-section-title p {
+    color: var(--grey);
+}
+
+time {
+    white-space: nowrap;
+}
+
+/* THIRD SECTION */
+
+.third {
+    height: 1368px;
+    padding: 40px 20px;
+}
+
+.third-section {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    align-items: center;
+}
+
+.third__title  {
+    margin-bottom: 32px;
+}
+
+.third__title span {
+    display: block;
+    font-family: 'EB Garamond';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
+    width: 320px;
+}
+
+
+.third-section p {
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px
+}
+
+.third-section_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+    margin-left: 20px;
+}
+
+
+.third-section_list__item span {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.third-section_list__item {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+    align-content: center;
+}
+
+
+/* CARD */
+
+.card {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    align-items: center;
+padding: 20px;
+}
+
+.card__title span {
+    display: block;
+    font-family: 'EB Garamond';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
+    width: 320px;
+}
+
+.card p {
+    font-family: "Inter";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 135%;
+}
+
+.card-container {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 30px;
+    align-content: flex-start;
+}
+
+.grey {
+    background-color: #343434;
+}
+
+figure {
+    margin: 0%;
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+}
+
+.img-name {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%;
+}
+
+.img-title {
+    font-family: EB Garamond;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%;
+}
+
+.card-inf {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+
+/* FOOTER */
+hr {
+color: var(--yellow);
+}
+footer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--yellow);
+}
+footer span {
+    display: block;
+
+}
+
+.footer__logo {
+width: 92px;
+}
+
+.footer-link {
+text-decoration: none;
+color: var(--white);
+text-align: center;
+}
+
+
+.footer__list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.footer__list_item {
+    text-decoration: none;
+}
+.footer__list_link {
+    font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%;
+}

@@ -1,0 +1,20 @@
+@font-face {
+    src: url(./ebgaramondmedium.ttf);
+    font-family: 'EB Garamond'; 
+    font-weight: 500;
+} 
+@font-face {
+    src: url(./ebgaramondregular.ttf);
+    font-family: 'EB Garamond'; 
+    font-weight: 400;
+} 
+@font-face {
+    src: url(./interregular.ttf);
+    font-family: 'Inter'; 
+    font-weight: 400;
+} 
+@font-face {
+    src: url(./interbold.ttf);
+    font-family: 'Inter'; 
+    font-weight: 700;
+} 
